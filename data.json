@@ -263,6 +263,29 @@
       "tech": "D",
       "cura": "D",
       "furtivita": "D"
+    },
+    {
+      "id": "ombre",
+      "name": "Le Ombre",
+      "star": false,
+      "classe": "Evocazione · Quarantena",
+      "image_url": "",
+      "ca": 26,
+      "pf_max": 4,
+      "ts_forte": [
+        "Riflessi",
+        "Volontà"
+      ],
+      "ts_debole": [
+        "Tempra"
+      ],
+      "combat": "A",
+      "magia": "SS",
+      "nav": "D",
+      "tech": "D",
+      "cura": "D",
+      "furtivita": "B",
+      "summoned": true
     }
   ],
   "cards": [
@@ -385,7 +408,12 @@
       "desc": "Stabilizza un personaggio a 0 PF e lo riporta a 20 PF, oppure cura una ferita ad un qualsiasi membro della ciurma e finisce fuori combattimento.",
       "rule": "Se Biggs cura un altro minion finisce fuori combattimento senza subire ferite.",
       "flavor": "- Hai un buco nello stomaco. - Lo so, ho sempre fame.",
-      "minion": ""
+      "minion": "",
+      "disable_if": {
+        "target": "self",
+        "condition": "ask",
+        "prompt": "Stai curando un minion?"
+      }
     },
     {
       "npc_id": "bigs",
@@ -506,7 +534,11 @@
       "desc": "Un alleato a scelta guadagna +5 a CA e a tutti i tiri salvezza per 1 round ed è immune a qualsiasi danno ed effetto per lo stesso round. Al termine del round, Quarantena viene rimossa dal combattimento anche se non ha subito ferite.",
       "rule": "Entrambi gli effetti sono simultanei e inscindibili. Quarantena esce dal combattimento a fine round indipendentemente dall'esito.",
       "flavor": "Si siede in mezzo al combattimento e apre la Smemo. Non le interessa.",
-      "minion": ""
+      "minion": "",
+      "disable_if": {
+        "target": "self",
+        "condition": "always"
+      }
     },
     {
       "npc_id": "quarantena",
@@ -528,7 +560,12 @@
       "desc": "Evoca 4 Ombre obbedienti per 10 ore.",
       "rule": "Ogni Ombra conta come minion separato con proprie regole e ferite.",
       "flavor": "- Quanti ne puoi evocare? - Quanti ne vuoi?",
-      "minion": "Ogni Ombra è un minion indipendente"
+      "minion": "Ogni Ombra è un minion indipendente",
+      "summon": {
+        "npc_id": "ombre",
+        "pool": 4,
+        "pool_name": "PS"
+      }
     },
     {
       "npc_id": "stella",
@@ -715,6 +752,30 @@
       "desc": "Murray convince un non-morto non intelligente a ignorare la ciurma per 10 minuti grazie alla sua parlantina.",
       "rule": "Non funziona su non-morti intelligenti.",
       "flavor": "Varcheremo le porte dell'inferno reggendo le loro teste su una picca! beh ok tu varcherai e io rotolerò.",
+      "minion": ""
+    },
+    {
+      "npc_id": "ombre",
+      "title": "Assalto delle Ombre",
+      "cost": 1,
+      "summon_cost": true,
+      "stat": "magia",
+      "grade": "SS",
+      "desc": "Le Ombre attaccano tutti i nemici entro 1,5m da loro. 1ps: 15 danni. 2ps: 30 danni. 3ps: 45 danni. 4ps: 60 danni.",
+      "rule": "Spendi 1-4 PS. I danni scalano con i punti spesi. Le Ombre devono essere entro 1,5m dai bersagli.",
+      "flavor": "Non fanno rumore. Non lasciano tracce. Non si fermano.",
+      "minion": ""
+    },
+    {
+      "npc_id": "ombre",
+      "title": "Comanda le Ombre",
+      "cost": 1,
+      "summon_cost": true,
+      "stat": "furtivita",
+      "grade": "SS",
+      "desc": "1ps: fiancheggia un nemico — vantaggio al primo attacco verso quel nemico. 2ps: due Ombre si sacrificano, assorbono la prossima ferita di un minion. 3ps: esplorano una zona, il DM fornisce un'informazione tattica. 4ps: bloccano un nemico per 1 round, non può agire.",
+      "rule": "Spendi 1-4 PS. L'effetto corrisponde ai punti spesi. Le Ombre devono essere entro 1,5m dal bersaglio.",
+      "flavor": "Quarantena alza un dito. Le Ombre capiscono.",
       "minion": ""
     }
   ]
