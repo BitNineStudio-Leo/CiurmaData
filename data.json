@@ -1,68 +1,721 @@
 {
   "npcs": [
-    {"id":"vieni_qua","name":"Vieni Qua","star":false,"classe":"Lv 13 · Orco · Guerriero","image_url":"https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/vieniqua.jpg","ca":26,"pf_max":3,"ts_forte":["Tempra","Volontà"],"ts_debole":["Riflessi"],"combat":"S","magia":"D","nav":"B","tech":"D","cura":"D","furtivita":"D"},
-    {"id":"saltarello","name":"Saltarello","star":false,"classe":"Lv 12 · Thri-Kreen · Mente Guerriera","image_url":"https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/saltarello.jpg","ca":23,"pf_max":3,"ts_forte":["Tempra","Volontà"],"ts_debole":["Riflessi"],"combat":"A","magia":"A","nav":"B","tech":"D","cura":"D","furtivita":"D"},
-    {"id":"wedge","name":"Wedge","star":false,"classe":"Lv 13 · Umano · Esperto (marinaio)","image_url":"https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/wedge.jpg","ca":20,"pf_max":3,"ts_forte":["Tempra"],"ts_debole":["Riflessi","Volontà"],"combat":"C","magia":"D","nav":"S","tech":"A","cura":"C","furtivita":"B"},
-    {"id":"bigs","name":"Bigs","star":false,"classe":"Lv 13 · Umano · Esperto (marinaio)","image_url":"https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/biggs.jpg","ca":20,"pf_max":3,"ts_forte":["Tempra"],"ts_debole":["Riflessi","Volontà"],"combat":"C","magia":"D","nav":"S","tech":"C","cura":"A","furtivita":"B"},
-    {"id":"son_goku","name":"Son Goku","star":true,"classe":"Lv 18 · Umano · Monaco","image_url":"https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/viejo.jpg","ca":27,"pf_max":4,"ts_forte":["Tempra","Volontà"],"ts_debole":["Riflessi"],"combat":"SS","magia":"D","nav":"A","tech":"D","cura":"B","furtivita":"D"},
-    {"id":"lady","name":"Lady","star":true,"classe":"Lv 18 · Umana · ???","image_url":"https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/lady.jpg","ca":26,"pf_max":4,"ts_forte":["Volontà"],"ts_debole":["Tempra","Riflessi"],"combat":"D","magia":"S","nav":"C","tech":"C","cura":"A","furtivita":"A"},
-    {"id":"quarantena","name":"Quarantena","star":true,"classe":"Lv 16 · Mezzelfa · Vera Negromante","image_url":"https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/quarantena.jpg","ca":27,"pf_max":4,"ts_forte":["Riflessi","Volontà"],"ts_debole":["Tempra"],"combat":"D","magia":"SS","nav":"A","tech":"D","cura":"C","furtivita":"A"},
-    {"id":"ducapollo","name":"Ducapollo","star":false,"classe":"Lv 15 · Gallinellan · Innato","image_url":"https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/ducapollo.jpg","ca":26,"pf_max":4,"ts_forte":["Riflessi","Volontà"],"ts_debole":["Tempra"],"combat":"D","magia":"S","nav":"D","tech":"D","cura":"D","furtivita":"S"},
-    {"id":"blood_mask","name":"Blood Mask","star":true,"classe":"Lv 9 · Umano (Yuan-ti) · Fantasma","image_url":"https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/bloodmask.jpg","ca":19,"pf_max":2,"ts_forte":["Riflessi","Volontà"],"ts_debole":["Tempra"],"combat":"C","magia":"B","nav":"S","tech":"D","cura":"D","furtivita":"A"},
-    {"id":"stella","name":"Stella","star":false,"classe":"Lv 13 · Elfa Occhirosi · Crusader","image_url":"https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/stella.jpg","ca":27,"pf_max":3,"ts_forte":["Tempra","Volontà"],"ts_debole":["Riflessi"],"combat":"A","magia":"S","nav":"D","tech":"D","cura":"A","furtivita":"D"},
-    {"id":"gurgo","name":"Gurgo (Scorpion)","star":false,"classe":"Lv 4 · Gremlin · Ladro","image_url":"https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/gurgo.jpg","ca":13,"pf_max":1,"ts_forte":["Riflessi"],"ts_debole":["Tempra","Volontà"],"combat":"C","magia":"D","nav":"B","tech":"B","cura":"D","furtivita":"B"},
-    {"id":"gatto","name":"Gatto","star":true,"classe":"Titano della Creatività · Gatto Supremo","image_url":"https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/gatto.jpg","ca":30,"pf_max":1,"ts_forte":["Tempra","Riflessi"],"ts_debole":["Volontà"],"combat":"B","magia":"D","nav":"D","tech":"SS","cura":"SS","furtivita":"B"},
-    {"id":"dorag","name":"Dorag","star":false,"classe":"Drago di ottone adulto","image_url":"https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/dorag.jpg","ca":26,"pf_max":4,"ts_forte":["Tempra","Riflessi"],"ts_debole":["Volontà"],"combat":"A","magia":"B","nav":"D","tech":"D","cura":"C","furtivita":"C"},
-    {"id":"murray","name":"Murray","star":false,"classe":"Lv 5 · Teschio rianimato · Stregone","image_url":"https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/murray.jpg","ca":12,"pf_max":2,"ts_forte":["Volontà"],"ts_debole":["Tempra","Riflessi"],"combat":"D","magia":"C","nav":"D","tech":"D","cura":"D","furtivita":"D"}
+    {
+      "id": "vieni_qua",
+      "name": "Vieniqua",
+      "star": false,
+      "classe": "Lv 13 · Orco · Guerriero",
+      "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/vieniqua.jpg",
+      "ca": 26,
+      "pf_max": 3,
+      "ts_forte": [
+        "Tempra",
+        "Volontà"
+      ],
+      "ts_debole": [
+        "Riflessi"
+      ],
+      "combat": "S",
+      "magia": "D",
+      "nav": "B",
+      "tech": "D",
+      "cura": "D",
+      "furtivita": "D"
+    },
+    {
+      "id": "saltarello",
+      "name": "Saltarello",
+      "star": false,
+      "classe": "Lv 12 · Thri-Kreen · Mente Guerriera",
+      "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/saltarello.jpg",
+      "ca": 23,
+      "pf_max": 3,
+      "ts_forte": [
+        "Tempra",
+        "Volontà"
+      ],
+      "ts_debole": [
+        "Riflessi"
+      ],
+      "combat": "A",
+      "magia": "A",
+      "nav": "B",
+      "tech": "D",
+      "cura": "D",
+      "furtivita": "D"
+    },
+    {
+      "id": "wedge",
+      "name": "Wedge",
+      "star": false,
+      "classe": "Lv 13 · Umano · Esperto (marinaio)",
+      "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/wedge.jpg",
+      "ca": 20,
+      "pf_max": 3,
+      "ts_forte": [
+        "Tempra"
+      ],
+      "ts_debole": [
+        "Riflessi",
+        "Volontà"
+      ],
+      "combat": "C",
+      "magia": "D",
+      "nav": "S",
+      "tech": "A",
+      "cura": "C",
+      "furtivita": "B"
+    },
+    {
+      "id": "bigs",
+      "name": "Biggs",
+      "star": false,
+      "classe": "Lv 13 · Umano · Esperto (marinaio)",
+      "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/biggs.jpg",
+      "ca": 20,
+      "pf_max": 3,
+      "ts_forte": [
+        "Tempra"
+      ],
+      "ts_debole": [
+        "Riflessi",
+        "Volontà"
+      ],
+      "combat": "C",
+      "magia": "D",
+      "nav": "S",
+      "tech": "C",
+      "cura": "A",
+      "furtivita": "B"
+    },
+    {
+      "id": "son_goku",
+      "name": "Son Goku",
+      "star": true,
+      "classe": "Lv 18 · Umano · Monaco",
+      "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/viejo.jpg",
+      "ca": 27,
+      "pf_max": 4,
+      "ts_forte": [
+        "Tempra",
+        "Volontà"
+      ],
+      "ts_debole": [
+        "Riflessi"
+      ],
+      "combat": "SS",
+      "magia": "D",
+      "nav": "A",
+      "tech": "D",
+      "cura": "B",
+      "furtivita": "D"
+    },
+    {
+      "id": "lady",
+      "name": "Lady",
+      "star": true,
+      "classe": "Lv 18 · Umana · ???",
+      "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/lady.jpg",
+      "ca": 26,
+      "pf_max": 4,
+      "ts_forte": [
+        "Volontà"
+      ],
+      "ts_debole": [
+        "Tempra",
+        "Riflessi"
+      ],
+      "combat": "D",
+      "magia": "S",
+      "nav": "C",
+      "tech": "C",
+      "cura": "A",
+      "furtivita": "A"
+    },
+    {
+      "id": "quarantena",
+      "name": "Quarantena",
+      "star": true,
+      "classe": "Lv 16 · Mezzelfa · Shadow Man",
+      "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/quarantena.jpg",
+      "ca": 27,
+      "pf_max": 4,
+      "ts_forte": [
+        "Riflessi",
+        "Volontà"
+      ],
+      "ts_debole": [
+        "Tempra"
+      ],
+      "combat": "D",
+      "magia": "SS",
+      "nav": "A",
+      "tech": "D",
+      "cura": "C",
+      "furtivita": "A"
+    },
+    {
+      "id": "stella",
+      "name": "Stella",
+      "star": false,
+      "classe": "Lv 13 · Elfa Occhirosi · Crusader",
+      "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/stella.jpg",
+      "ca": 27,
+      "pf_max": 3,
+      "ts_forte": [
+        "Tempra",
+        "Volontà"
+      ],
+      "ts_debole": [
+        "Riflessi"
+      ],
+      "combat": "A",
+      "magia": "S",
+      "nav": "D",
+      "tech": "D",
+      "cura": "A",
+      "furtivita": "D"
+    },
+    {
+      "id": "gurgo",
+      "name": "Gurgo (Scorpion)",
+      "star": false,
+      "classe": "Lv 4 · Gnefro · Ladro",
+      "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/gurgo.jpg",
+      "ca": 13,
+      "pf_max": 1,
+      "ts_forte": [
+        "Riflessi"
+      ],
+      "ts_debole": [
+        "Tempra",
+        "Volontà"
+      ],
+      "combat": "C",
+      "magia": "D",
+      "nav": "B",
+      "tech": "B",
+      "cura": "D",
+      "furtivita": "B"
+    },
+    {
+      "id": "gatto",
+      "name": "Gatto",
+      "star": true,
+      "classe": "Titano della Creatività · Gatto Supremo",
+      "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/gatto.jpg",
+      "ca": 30,
+      "pf_max": 5,
+      "ts_forte": [
+        "Tempra",
+        "Riflessi"
+      ],
+      "ts_debole": [
+        "Volontà"
+      ],
+      "combat": "B",
+      "magia": "D",
+      "nav": "D",
+      "tech": "SS",
+      "cura": "SS",
+      "furtivita": "B"
+    },
+    {
+      "id": "dorag",
+      "name": "Dorag",
+      "star": false,
+      "classe": "Drago di ottone adulto",
+      "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/dorag.jpg",
+      "ca": 26,
+      "pf_max": 3,
+      "ts_forte": [
+        "Tempra",
+        "Riflessi"
+      ],
+      "ts_debole": [
+        "Volontà"
+      ],
+      "combat": "A",
+      "magia": "B",
+      "nav": "D",
+      "tech": "D",
+      "cura": "C",
+      "furtivita": "C"
+    },
+    {
+      "id": "murray",
+      "name": "Murray",
+      "star": false,
+      "classe": "Lv 5 · Teschio rianimato · Stregone",
+      "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/murray.jpg",
+      "ca": 12,
+      "pf_max": 2,
+      "ts_forte": [
+        "Volontà"
+      ],
+      "ts_debole": [
+        "Tempra",
+        "Riflessi"
+      ],
+      "combat": "D",
+      "magia": "C",
+      "nav": "D",
+      "tech": "D",
+      "cura": "D",
+      "furtivita": "D"
+    }
   ],
   "cards": [
-    {"npc_id":"vieni_qua","title":"Ascia-mano","cost":1,"stat":"combat","grade":"S","desc":"Attacca con il moncone-ascia. Infligge 36 danni. Se il bersaglio è taglia Media o inferiore, è anche Abbattuto per 1 round.","rule":"Nessun tiro per colpire. Portata mischia.","flavor":"Il vecchio capitano gliela fece costruire da un fabbro. Bal gli ha insegnato come usarla.","minion":""},
-    {"npc_id":"vieni_qua","title":"Scudo vivente","cost":1,"stat":"combat","grade":"S","desc":"Si interpone tra un alleato adiacente e una ferita in arrivo, assorbendo il danno al suo posto.","rule":"Sostituisce la regola \"Proteggi il minion\": non costa il punto carta aggiuntivo.","flavor":"La prima lezione era sempre la stessa: metti il corpo davanti.","minion":"Vieni Qua riporta la ferita al posto dell'alleato protetto."},
-    {"npc_id":"vieni_qua","title":"Ambizione dell'armatura","cost":2,"stat":"combat","grade":"S","desc":"Per 3 round: gli attacchi ignorano resistenze e riduzioni al danno; ogni danno subito viene dimezzato prima di qualsiasi riduzione.","rule":"Usabile 1 volta per sessione. Non è magia — è spirito puro.","flavor":"— Come fai a reggere tutto questo? — Non lo so. Il maestro Bal lo chiama \"ambizione\".","minion":""},
-    {"npc_id":"saltarello","title":"Raffica di arti","cost":1,"stat":"combat","grade":"A","desc":"Attacca due bersagli diversi nello stesso round infliggendo 24 danni a ciascuno.","rule":"I due bersagli devono essere entro 3m tra loro.","flavor":"Quattro braccia. Non gli è mai stato insegnato a esitare.","minion":""},
-    {"npc_id":"saltarello","title":"Balzo psionico","cost":1,"stat":"magia","grade":"A","desc":"Salta fino a 18m in qualsiasi direzione. Può atterrare su un nemico: 20 danni e Abbattuto per 1 round.","rule":"Non provoca attacchi di opportunità in uscita.","flavor":"La ciurma ha smesso di chiedersi come ci arrivi lassù.","minion":""},
-    {"npc_id":"saltarello","title":"Interrogatorio psichico","cost":2,"stat":"magia","grade":"A","desc":"Legge i pensieri superficiali di un PNG. Rivela: se mente, la preoccupazione principale, le intenzioni ostili.","rule":"Il PNG non se ne accorge. Max 1 per scena.","flavor":"Saltarello non si unì a LeBlanc per scelta. Ma scelse ogni giorno dopo.","minion":""},
-    {"npc_id":"wedge","title":"Manovra esperta","cost":1,"stat":"nav","grade":"S","desc":"Una prova di navigazione o manovra della nave riesce automaticamente.","rule":"Dichiarare prima del tiro.","flavor":"Testa cucita con una corda. Timone in mano. Vento in poppa. Una buona giornata.","minion":""},
-    {"npc_id":"wedge","title":"Riparazione rapida","cost":1,"stat":"tech","grade":"A","desc":"Ripara 30 PF strutturali della nave in 10 minuti.","rule":"Non usabile in combattimento navale attivo.","flavor":"— Come lavori con la testa così? — Con molta attenzione a non girarmi troppo veloce.","minion":""},
-    {"npc_id":"wedge","title":"Tecnica rematoria","cost":2,"stat":"nav","grade":"S","desc":"La nave si muove al doppio della velocità per 1 ora. Se anche Bigs usa la stessa carta nella stessa ora: velocità triplicata.","rule":"Inseguimento/fuga: la distanza varia di 6 miglia per ora.","flavor":"La marina li cercava da tre mari. Non li trovò mai.","minion":""},
-    {"npc_id":"bigs","title":"Manovra esperta","cost":1,"stat":"nav","grade":"S","desc":"Una prova di navigazione o manovra della nave riesce automaticamente.","rule":"Dichiarare prima del tiro.","flavor":"Bigs e Wedge non parlano molto. Non ne hanno bisogno.","minion":""},
-    {"npc_id":"bigs","title":"Pronto soccorso","cost":1,"stat":"cura","grade":"A","desc":"Stabilizza un personaggio a 0 PF e lo riporta a 16 PF. Fuori combattimento: cura 28 PF a qualsiasi membro della ciurma.","rule":"1 round di azione.","flavor":"— Hai un buco nel petto. — Lo so. Fa un po' freddo.","minion":""},
-    {"npc_id":"bigs","title":"Tecnica rematoria","cost":2,"stat":"nav","grade":"S","desc":"La nave si muove al doppio della velocità per 1 ora. Se anche Wedge usa la stessa carta nella stessa ora: velocità triplicata.","rule":"Inseguimento/fuga: la distanza varia di 6 miglia per ora.","flavor":"Insieme valgono più di qualsiasi vento.","minion":""},
-    {"npc_id":"son_goku","title":"Pugno del monaco","cost":1,"stat":"combat","grade":"SS","desc":"Infligge 44 danni a un bersaglio senza tiro per colpire. Bersagli con meno di 10 DV: Abbattuto per 1 round.","rule":"Portata mischia.","flavor":"L'ammiraglio che fondò una città. Il prigioniero che la abbandonò. Il monaco che non smise mai di allenarsi.","minion":"★ In forma Re Kong non può ricevere ferite da attacchi normali."},
-    {"npc_id":"son_goku","title":"Ambizione del re conquistatore","cost":1,"stat":"combat","grade":"SS","desc":"Tutti i nemici con meno di 8 DV entro 18m cadono incoscienti per 1 round. I più forti subiscono Paura.","rule":"CD Volontà 22 per nemici con 8+ DV. Non è magia.","flavor":"— Sa chi sono? — Sì. — E allora sa già come finisce.","minion":""},
-    {"npc_id":"son_goku","title":"Re Kong","cost":2,"stat":"combat","grade":"SS","desc":"Trasformazione in gorilla gigante per 3 round: immune alle ferite normali, ogni attacco infligge 60 danni, nemici con meno di 10 DV fuggono automaticamente.","rule":"Usabile 1 volta per sessione.","flavor":"Mouga pensava di averlo domato. Aveva torto.","minion":"★ In forma Re Kong non può ricevere ferite da attacchi normali."},
-    {"npc_id":"son_goku","title":"Re Kong scatenato","cost":3,"stat":"combat","grade":"SS","desc":"Come Re Kong ma dura 5 round. Ogni attacco colpisce tutti i nemici entro 3m per 50 danni ciascuno.","rule":"Usabile solo se Re Kong è già attivo. 1 volta per sessione.","flavor":"Quando il Re Kong ruggisce, anche i leviatani nuotano dall'altra parte.","minion":""},
-    {"npc_id":"lady","title":"Lettura del destino","cost":1,"stat":"magia","grade":"S","desc":"Domanda sì/no su un pericolo imminente. Il DM risponde onestamente. Non fallisce mai.","rule":"Max 1 per sessione per giocatore.","flavor":"Non predice il futuro. Lo vede già successo.","minion":""},
-    {"npc_id":"lady","title":"Tisana della guaritrice","cost":1,"stat":"cura","grade":"A","desc":"Cura 28 PF e rimuove una condizione minore. Fuori combattimento.","rule":"30 minuti di preparazione.","flavor":"Sa di erbe e di rum e di qualcosa che non ha nome. Funziona sempre.","minion":""},
-    {"npc_id":"lady","title":"Maledizione voodoo","cost":2,"stat":"magia","grade":"S","desc":"Un nemico scelto subisce -4 a tutti i tiri per 24 ore. Nessun tiro salvezza.","rule":"Non si cumula con altre maledizioni.","flavor":"Lady non odia nessuno. Ma ricorda tutto.","minion":""},
-    {"npc_id":"lady","title":"Oracolo del crocicchio","cost":2,"stat":"magia","grade":"S","desc":"Consulta gli spiriti. Il DM fornisce un indizio concreto su un mistero attivo: un nome, un luogo o una connessione nascosta.","rule":"Max 1 per sessione.","flavor":"Al crocicchio si incontrano tutti i cammini. Anche quelli dei morti.","minion":""},
-    {"npc_id":"quarantena","title":"Tocco necromantico","cost":1,"stat":"magia","grade":"SS","desc":"A scelta: crea 4 scheletri obbedienti per 1 ora — oppure infligge 32 danni freddo — oppure drena 24 PF da un bersaglio recuperandoli.","rule":"Un solo effetto per attivazione.","flavor":"— Quanti ne puoi evocare? — Quanti ne vuoi?","minion":""},
-    {"npc_id":"quarantena","title":"Frutto Feel-Feel","cost":1,"stat":"furtivita","grade":"A","desc":"Legge le emozioni di un PNG vicino. Rivela tre parole chiave: stato emotivo attuale, intenzione immediata, paura più profonda.","rule":"Il PNG non se ne accorge. Nessun tiro.","flavor":"— Come stai? — [Paura. Orgoglio. Speranza di essere abbracciata.] — Bene, grazie.","minion":""},
-    {"npc_id":"quarantena","title":"Evoca le ombre","cost":2,"stat":"magia","grade":"SS","desc":"Evoca 4 Ombre obbedienti per 10 ore. Automaticamente riuscito.","rule":"Ogni Ombra conta come minion separato con proprie regole ferite.","flavor":"Quattordici anni a comandare la Maradà da sola. Non era mai sola.","minion":"Ogni Ombra è un minion indipendente con pf_max 1."},
-    {"npc_id":"quarantena","title":"Dono del Shadow Man","cost":3,"stat":"magia","grade":"SS","desc":"Interroga lo spirito di un personaggio morto. Fino a 3 domande. Il defunto risponde veritieramente.","rule":"Il corpo deve essere presente o il luogo di morte noto. 1 volta per sessione.","flavor":"I morti hanno pochi segreti per chi li sa ascoltare.","minion":""},
-    {"npc_id":"ducapollo","title":"Lancio innato","cost":1,"stat":"magia","grade":"S","desc":"A scelta: Sonno (3 creature addormentate 1 ora), Fascino Persone (1 PNG affascinato 4 ore), Nebbia Fitta (zona 12m, 10 min).","rule":"CD 17 per Sonno e Fascino. Nessun componente.","flavor":"— Cosa ha fatto esattamente? — Un piccolo incantesimo. Non si preoccupi.","minion":""},
-    {"npc_id":"ducapollo","title":"Sparizione","cost":1,"stat":"furtivita","grade":"S","desc":"Diventa invisibile e inodore per 1 ora. Non lascia tracce. Automaticamente riuscito.","rule":"Cessa se attacca o lancia incantesimi.","flavor":"Un gentiluomo sa sempre quando non è il momento di farsi vedere.","minion":""},
-    {"npc_id":"ducapollo","title":"Mascheramento innato","cost":2,"stat":"furtivita","grade":"S","desc":"Assume l'aspetto fisico di un PNG noto per 4 ore. Supera automaticamente la prima prova di travestimento della scena.","rule":"Deve aver osservato il bersaglio per almeno 1 minuto.","flavor":"Geiz lo donò a Royna come guida, senza spiegazioni. Ducapollo conosce il motivo. Non lo dice.","minion":""},
-    {"npc_id":"blood_mask","title":"Sorveglianza spettrale","cost":1,"stat":"nav","grade":"S","desc":"Attraversa una struttura e spia una stanza per 10 minuti. Riferisce tutto ciò che vede e sente con precisione assoluta.","rule":"Non può essere rilevato. Nessun tiro.","flavor":"Da morto vede più cose di quanto avesse mai visto da vivo.","minion":""},
-    {"npc_id":"blood_mask","title":"Lamento del fantasma","cost":1,"stat":"magia","grade":"B","desc":"24 danni da forza a tutti i nemici entro 6m. Nemici con meno di 5 DV fuggono per 1 round.","rule":"CD Tempra 14 per dimezzare i danni.","flavor":"René Rottingam promise a se stesso che non avrebbe mai più gridato di dolore. Mantiene la promessa.","minion":""},
-    {"npc_id":"blood_mask","title":"Dono della moda","cost":2,"stat":"furtivita","grade":"A","desc":"Crea un travestimento magicamente perfetto per un membro della ciurma. La prima prova di Travestimento della sessione riesce automaticamente.","rule":"Il travestimento magico dura 8 ore.","flavor":"Aveva promesso a una prigioniera un vestito di seta divina. Non smette di cucire.","minion":""},
-    {"npc_id":"blood_mask","title":"Infestazione","cost":2,"stat":"magia","grade":"B","desc":"Possiede un oggetto o luogo per 10 minuti. A scelta: risponde come il precedente proprietario (RP) oppure lo rende fisicamente ostile ai nemici (combat).","rule":"Forma e comportamento a discrezione del DM.","flavor":"Uno specchio che ha visto troppe cose non dimentica facilmente.","minion":""},
-    {"npc_id":"stella","title":"Manovra del Crusader","cost":1,"stat":"combat","grade":"A","desc":"Attacca infliggendo 36 danni sacri. Contro non-morti o aberrazioni: 56 danni e Spaventato per 1 round.","rule":"Nessun tiro per colpire.","flavor":"L'astrosauro le ha detto che è la prescelta. Stella non ha ragioni per dubitarne.","minion":""},
-    {"npc_id":"stella","title":"Tocco della prescelta","cost":1,"stat":"cura","grade":"A","desc":"Cura 32 PF a un alleato. Se è a 0 PF, lo riporta a 16 PF automaticamente e rimuove una condizione.","rule":"Contatto fisico richiesto.","flavor":"Guarisce con la stessa intensità con cui combatte. Che è molta.","minion":""},
-    {"npc_id":"stella","title":"Fervore degli astri","cost":2,"stat":"magia","grade":"S","desc":"Aura divina per 2 round. Tutti gli alleati in 9m: +3 attacchi, +3 danni, resistenza fisica 5.","rule":"Non si cumula con altri bonus di aura.","flavor":"— Da dove viene quella luce? — Da lei. È sempre stata lì.","minion":""},
-    {"npc_id":"stella","title":"Astrosauro","cost":2,"stat":"magia","grade":"S","desc":"+30 PF temporanei, morso da 48 danni, immune a incantesimi di lv 1-3. Dura 3 round.","rule":"Usabile 1 volta per sessione.","flavor":"Il grande astrosauro non cammina su questa terra. Tranne quando lo fa.","minion":"★ In forma astrosauro non può ricevere ferite da attacchi non magici."},
-    {"npc_id":"gurgo","title":"Borseggio / scassinare","cost":1,"stat":"furtivita","grade":"B","desc":"Ruba un oggetto specifico da un PNG o apre una serratura. CD Furtività 14. Se il bersaglio non è allertato: riuscita automatica.","rule":"Tentabile anche in combattimento (azione standard).","flavor":"Lo chiamavano \"Schifo\" perché erano crudeli. Si chiama Scorpion perché lo ha scelto lui.","minion":""},
-    {"npc_id":"gurgo","title":"Patetico","cost":1,"stat":"furtivita","grade":"B","desc":"Gurgo fa una scena tanto pietosa che un nemico perde la sua azione nel round successivo.","rule":"CD Volontà 10. Non funziona su non-morti, costrutti o creature con Int < 3.","flavor":"Non è una tecnica. È una vita intera di umiliazioni trasformata in arma.","minion":""},
-    {"npc_id":"gurgo","title":"Sabotaggio gremlin","cost":2,"stat":"tech","grade":"B","desc":"Sabota un meccanismo nemico: cannone, trappola, serratura magica, gabbia. Effetto immediato e irreversibile senza riparazioni.","rule":"Deve essere adiacente al meccanismo. 1 round di azione.","flavor":"Si chiama anche \"Gurgo\" per non farsi trovare da Stella. Ma questo è un altro discorso.","minion":""},
-    {"npc_id":"gatto","title":"Riparazione prodigiosa","cost":1,"stat":"tech","grade":"SS","desc":"Ripara istantaneamente qualsiasi oggetto meccanico o magico danneggiato. Nave: recupera 50 PF strutturali.","rule":"Il DM tira 1d6 in segreto. Con 1-2: Gatto ripara qualcosa che nessuno aveva chiesto, o migliora l'oggetto in modo inaspettato con conseguenze narrative imprevedibili. Non usabile in combattimento navale attivo.","flavor":"— Come hai fatto? — Non ricordo. Ma funziona.","minion":""},
-    {"npc_id":"gatto","title":"Cucina suprema","cost":1,"stat":"cura","grade":"SS","desc":"Tutti i commensali recuperano 40 PF e rimuovono una condizione a scelta.","rule":"Il DM tira 1d6 in segreto. Con 1-2: il piatto ha un effetto aggiuntivo non richiesto — un commensale casuale acquisisce una capacità bizzarra o tutti subiscono un effetto narrativo imprevedibile per 1 ora.","flavor":"Cucinò qualcosa di straordinario con tre chiodi arrugginiti e un pesce volante. Non rivela la ricetta.","minion":""},
-    {"npc_id":"gatto","title":"Costruzione titanica","cost":2,"stat":"tech","grade":"SS","desc":"Il giocatore descrive un problema. Gatto costruisce in pochi minuti qualcosa che lo risolve. La forma della soluzione è a discrezione del DM.","rule":"Il DM tira 1d6 in segreto. Con 1-2: la costruzione risolve il problema ma ne crea uno nuovo di proporzioni simili altrove. Il giocatore descrive il problema — non la soluzione.","flavor":"Il giocatore spiega il problema. Gatto si addormenta. Si sveglia con la soluzione già costruita.","minion":""},
-    {"npc_id":"gatto","title":"Balzo della nave","cost":3,"stat":"tech","grade":"SS","desc":"La nave compie un balzo prodigioso fino a 1km, superando qualsiasi ostacolo fisico o navale.","rule":"Il DM tira 1d6 in segreto. Con 1-2: la nave atterra sulla terra ferma. Richiede almeno un giorno di riparazioni e un modo per rimetterla in mare prima di poter ripartire. Gatto deve essere sveglio e a bordo. 1 volta per sessione.","flavor":"Nessuno sa cosa ci sia dentro quei pedali. Nessuno ha il coraggio di smontarli.","minion":""},
-    {"npc_id":"dorag","title":"Soffio del drago","cost":1,"stat":"combat","grade":"A","desc":"A scelta: soffio di fuoco (36 danni, cono 9m, CD Riflessi 18 dimezza) oppure soffio soporifero (1 bersaglio dorme 10 min, CD For 16 annulla).","rule":"Una sola forma per attivazione.","flavor":"È educato. È cordiale. Brucia le cose solo quando necessario.","minion":""},
-    {"npc_id":"dorag","title":"Contatto dell'Airone","cost":2,"stat":"magia","grade":"B","desc":"Chiama un contatto nella rete dell'Airone. Ottieni almeno 3 informazioni riservate e concrete su una fazione, PNG o luogo.","rule":"Max 1 per sessione. Informazioni a discrezione del DM.","flavor":"I draghi di ottone collezionano storie. Dorag ne conosce abbastanza da riempire tre biblioteche.","minion":""},
-    {"npc_id":"dorag","title":"Maestà del drago","cost":2,"stat":"combat","grade":"A","desc":"Tutti i nemici entro 12m con meno di 10 DV fuggono per 2 round. I nemici più forti subiscono -2 agli attacchi per lo stesso periodo.","rule":"CD Volontà 18 per nemici con 10+ DV.","flavor":"Non urla. Non minaccia. Apre le ali e basta.","minion":""},
-    {"npc_id":"murray","title":"Maledizione dello stregone","cost":1,"stat":"magia","grade":"C","desc":"Un nemico subisce -2 a tutti i tiri salvezza per 1 ora. Murray lo fa nel modo più teatralmente minaccioso possibile.","rule":"CD Volontà 14 annulla. Non si cumula con Maledizione Voodoo di Lady.","flavor":"— Smettila con quelle maledizioni. — MAI. Sono il più terrificante teschio non-morto dei Mari del Sud.","minion":""},
-    {"npc_id":"murray","title":"Proiettile magico","cost":1,"stat":"magia","grade":"C","desc":"3 dardi magici automatici da 8 danni l'uno. Distribuibili su bersagli diversi.","rule":"Non richiede tiro per colpire.","flavor":"— Come fai a lanciare incantesimi senza mani? — Silenzio! Non distrarre il male con domande stupide.","minion":""},
-    {"npc_id":"murray","title":"Trattativa con i morti","cost":2,"stat":"magia","grade":"C","desc":"Murray convince un non-morto non intelligente a ignorare la ciurma per 10 minuti, rotolandogli incontro.","rule":"CD Carisma 14 del giocatore. Non funziona su non-morti intelligenti.","flavor":"— Come ci parli? — Capiscono il dialetto. E rispettano l'anzianità.","minion":""}
+    {
+      "npc_id": "vieni_qua",
+      "title": "Ascia-mano",
+      "cost": 1,
+      "stat": "combat",
+      "grade": "S",
+      "desc": "Attacca con la protesi ascia. Infligge 30 danni. Se il bersaglio è taglia Media o inferiore, è anche Abbattuto per 1 round.",
+      "rule": "Nessun tiro per colpire. Portata mischia.",
+      "flavor": "Dopo il tradimento di x si fece impiantare un'ascia in un braccio. Bal gli ha insegnato come usarla.",
+      "minion": ""
+    },
+    {
+      "npc_id": "vieni_qua",
+      "title": "Scudo vivente",
+      "cost": 1,
+      "stat": "combat",
+      "grade": "S",
+      "desc": "Si interpone tra un alleato adiacente e un attacco in arrivo, divenendone il bersaglio.",
+      "rule": "Vieni Qua riporta la ferita al posto dell'alleato protetto.",
+      "flavor": "La prima lezione che vieni qua abbia mai imparato: - mettere corpo davanti.",
+      "minion": ""
+    },
+    {
+      "npc_id": "vieni_qua",
+      "title": "Ambizione dell'armatura",
+      "cost": 2,
+      "stat": "combat",
+      "grade": "S",
+      "desc": "Per 3 round: gli attacchi ignorano resistenze e riduzioni al danno, durante questi round ignora il primo danno subito.",
+      "rule": "Usabile 1 volta per sessione. Non è magia — è spirito puro.",
+      "flavor": "- Come fai a reggere tutto questo?  -Non sapere. Maestro Bal chiamare questo \"ambizione\".",
+      "minion": ""
+    },
+    {
+      "npc_id": "saltarello",
+      "title": "Raffica di artigli",
+      "cost": 1,
+      "stat": "combat",
+      "grade": "A",
+      "desc": "Attacca due bersagli diversi nello stesso round infliggendo 25 danni a ciascuno.",
+      "rule": "I due bersagli devono essere entro 3m tra loro.",
+      "flavor": "Fra i Thri Kreen è quello che si definisce un “sangue scuro”, le sue braccia sono segno di un progenitore Formian.",
+      "minion": ""
+    },
+    {
+      "npc_id": "saltarello",
+      "title": "Balzo psionico",
+      "cost": 1,
+      "stat": "magia",
+      "grade": "A",
+      "desc": "Salta fino a 18m in qualsiasi direzione. Può atterrare su un nemico: 30 danni e Abbattuto per 1 round.",
+      "rule": "Non provoca attacchi di opportunità iniziando il salto.",
+      "flavor": "La ciurma ha smesso di chiedersi come riesca ad arrivare tanto in alto.",
+      "minion": ""
+    },
+    {
+      "npc_id": "saltarello",
+      "title": "Messaggio telepatico",
+      "cost": 2,
+      "stat": "magia",
+      "grade": "A",
+      "desc": "Invia un messaggio telepatico ad un qualsiasi membro della ciurma, ovunque si trovi. il contattato può rispondere.",
+      "rule": "Funziona solo se il bersaglio si trova sullo stesso piano, limite di 30 parole.",
+      "flavor": "Saltarello fu soldato presso un alveare che era in affari con il corsaro le Blanc. Scelse una nuova famiglia.",
+      "minion": ""
+    },
+    {
+      "npc_id": "wedge",
+      "title": "Manovra esperta",
+      "cost": 1,
+      "stat": "nav",
+      "grade": "S",
+      "desc": "Una prova di navigazione o manovra della nave riesce automaticamente.",
+      "rule": "Dichiarare prima del tiro.",
+      "flavor": "Testa cucita con una corda, timone in mano e vento in poppa. Una splendida giornata.",
+      "minion": ""
+    },
+    {
+      "npc_id": "wedge",
+      "title": "Riparazione rapida",
+      "cost": 1,
+      "stat": "tech",
+      "grade": "A",
+      "desc": "Ripara 30 PF strutturali della nave in 10 minuti.",
+      "rule": "Non usabile in combattimento navale attivo.",
+      "flavor": "- Come lavori con la testa così? - Facendo attenzione a non girarmi di scatto.",
+      "minion": ""
+    },
+    {
+      "npc_id": "wedge",
+      "title": "Tecnica rematoria",
+      "cost": 2,
+      "stat": "nav",
+      "grade": "S",
+      "desc": "La nave si muove al doppio della velocità per 1 ora. ",
+      "rule": "Se anche Bigs usa la stessa carta nella stessa ora, la velocità è triplicata.",
+      "flavor": "La marina li cerca per tre dei sei mari. Non li ha mai raggiunti.",
+      "minion": ""
+    },
+    {
+      "npc_id": "bigs",
+      "title": "Manovra esperta",
+      "cost": 1,
+      "stat": "nav",
+      "grade": "S",
+      "desc": "Una prova di navigazione o manovra della nave riesce automaticamente.",
+      "rule": "Dichiarare prima del tiro.",
+      "flavor": "Biggs e Wedge non parlano molto. Non ne hanno bisogno per capirsi.",
+      "minion": ""
+    },
+    {
+      "npc_id": "bigs",
+      "title": "Spuntino Rinvigorente",
+      "cost": 1,
+      "stat": "cura",
+      "grade": "A",
+      "desc": "Stabilizza un personaggio a 0 PF e lo riporta a 20 PF, oppure cura una ferita ad un qualsiasi membro della ciurma e finisce fuori combattimento.",
+      "rule": "Se Biggs cura un altro minion finisce fuori combattimento senza subire ferite.",
+      "flavor": "- Hai un buco nello stomaco. - Lo so, ho sempre fame.",
+      "minion": ""
+    },
+    {
+      "npc_id": "bigs",
+      "title": "Tecnica rematoria",
+      "cost": 2,
+      "stat": "nav",
+      "grade": "S",
+      "desc": "La nave si muove al doppio della velocità per 1 ora.",
+      "rule": "Se anche Wedge usa la stessa carta nella stessa ora: velocità triplicata.",
+      "flavor": "Insieme, i due ex Marine, valgono più di qualsiasi vento.",
+      "minion": ""
+    },
+    {
+      "npc_id": "son_goku",
+      "title": "Pugno del monaco",
+      "cost": 1,
+      "stat": "combat",
+      "grade": "SS",
+      "desc": "Infligge 50 danni a un bersaglio senza tiro per colpire. Bersagli con meno di 12 DV: Abbattuto per 1 round.",
+      "rule": "Portata 3m",
+      "flavor": "L'ex-ammiraglio che fondò una città, l'ex-prigioniero che si consegnò per difenderla. Una volontà che non smise mai di lottare.",
+      "minion": "★ In forma Re Kong non può ricevere ferite da attacchi normali."
+    },
+    {
+      "npc_id": "son_goku",
+      "title": "Ambizione del re conquistatore",
+      "cost": 2,
+      "stat": "combat",
+      "grade": "SS",
+      "desc": "Tutti i nemici con meno di 12 DV entro 18m cadono infermi per 1d4 round. Tutti gli altri sono comunque scossi per la stessa durata",
+      "rule": "nessun tiro salvezza.",
+      "flavor": "- Sai chi sono?  - Sì. - Allora sai già come finirà.",
+      "minion": "★ In forma Re Kong non può ricevere ferite da attacchi normali."
+    },
+    {
+      "npc_id": "son_goku",
+      "title": "Re Kong",
+      "cost": 2,
+      "stat": "combat",
+      "grade": "SS",
+      "desc": "Trasformazione in gorilla gigante per 3 round: immune alle ferite normali, ogni round può infliggere un attacco da 40 danni, i nemici con meno di 12 DV sono spaventati.",
+      "rule": "Portata 6 m, taglia mastodontica, utilizzabile 1 volta per sessione.",
+      "flavor": "Mouga pensava di averlo spezzato. Aveva torto.",
+      "minion": "★ In forma Re Kong non può ricevere ferite da attacchi normali."
+    },
+    {
+      "npc_id": "son_goku",
+      "title": "Re Kong scatenato",
+      "cost": 3,
+      "stat": "combat",
+      "grade": "SS",
+      "desc": "Come Re Kong ma dura 5 round. Ogni attacco colpisce tutti i nemici entro 6m per 40 danni ciascuno.",
+      "rule": "Usabile solo se Re Kong è già attivo. taglia colossale, 1 volta per sessione.",
+      "flavor": "Re Kong non si inchina a nessuno. Nemmeno ai leviatani.",
+      "minion": "★ In forma Re Kong non può ricevere ferite da attacchi normali."
+    },
+    {
+      "npc_id": "lady",
+      "title": "Lettura del destino",
+      "cost": 1,
+      "stat": "magia",
+      "grade": "S",
+      "desc": "Domanda sì/no su un pericolo imminente. Il DM risponde onestamente. Non fallisce mai.",
+      "rule": "Max 1 per sessione per giocatore.",
+      "flavor": "Non predice il futuro, lo vede già successo.",
+      "minion": ""
+    },
+    {
+      "npc_id": "lady",
+      "title": "Tisana della guaritrice",
+      "cost": 1,
+      "stat": "cura",
+      "grade": "A",
+      "desc": "Cura 28 PF e rimuove maledizioni.",
+      "rule": "Solo fuori combattimento, 30 minuti di preparazione.",
+      "flavor": "Sa di erbe, di rum e di qualcosa che non ha nome. Funziona sempre.",
+      "minion": ""
+    },
+    {
+      "npc_id": "lady",
+      "title": "Maledizione voodoo",
+      "cost": 2,
+      "stat": "magia",
+      "grade": "S",
+      "desc": "Un nemico scelto subisce svantaggio ai prossimi 4 tiri. Nessun tiro salvezza.",
+      "rule": "Si può cumulare la durata con usi successivi.",
+      "flavor": "Lady non odia nessuno. Ma ricorda tutto.",
+      "minion": ""
+    },
+    {
+      "npc_id": "lady",
+      "title": "Oracolo del crocicchio",
+      "cost": 3,
+      "stat": "magia",
+      "grade": "S",
+      "desc": "Consulta gli spiriti. Il DM fornisce un indizio concreto su un mistero attivo: un nome, un luogo o una connessione nascosta, dopodiché Lady è fuori combattimento.",
+      "rule": "Max 1 per sessione.",
+      "flavor": "Al crocicchio si incontrano tutti i cammini. Anche quelli dei morti.",
+      "minion": ""
+    },
+    {
+      "npc_id": "quarantena",
+      "title": "Lama del Dolore e della paura",
+      "cost": 1,
+      "stat": "magia",
+      "grade": "SS",
+      "desc": "A scelta: Infligge 32 danni da energia negativa - oppure infligge un livello negativo - oppure prende il controllo di un non morto entro 14 DV per 1 round.",
+      "rule": "Un solo effetto per attivazione.",
+      "flavor": "- E' forte come incantesimo? - mah, è medio. ",
+      "minion": ""
+    },
+    {
+      "npc_id": "quarantena",
+      "title": "Frutto Feel-Feel: Indifferenza",
+      "cost": 2,
+      "stat": "magia",
+      "grade": "SS",
+      "desc": "Un alleato a scelta guadagna +5 a CA e a tutti i tiri salvezza per 1 round ed è immune a qualsiasi danno ed effetto per lo stesso round. Al termine del round, Quarantena viene rimossa dal combattimento anche se non ha subito ferite.",
+      "rule": "Entrambi gli effetti sono simultanei e inscindibili. Quarantena esce dal combattimento a fine round indipendentemente dall'esito.",
+      "flavor": "Si siede in mezzo al combattimento e apre la Smemo. Non le interessa.",
+      "minion": ""
+    },
+    {
+      "npc_id": "quarantena",
+      "title": "Frutto Feel-Feel: Musica Deprimente",
+      "cost": 1,
+      "stat": "magia",
+      "grade": "A",
+      "desc": "Se è attiva musica bardica nelle vicinanze, tutti i neutrali che la sentono beneficiano di Ispirare Grandezza. Qualsiasi incantatore che tenti di lanciare un incantesimo con descrittore Bene o Male deve superare Concentrazione CD 35 o l'incantesimo fallisce.",
+      "rule": "Entrambi gli effetti si attivano insieme finché dura la musica. Non funziona in assenza di una fonte musicale attiva.",
+      "flavor": "Quarantena trova la musica di Rock accettabile. Abbastanza da fargli da manager.",
+      "minion": ""
+    },
+    {
+      "npc_id": "quarantena",
+      "title": "Shadow Man",
+      "cost": 2,
+      "stat": "magia",
+      "grade": "SS",
+      "desc": "Evoca 4 Ombre obbedienti per 10 ore.",
+      "rule": "Ogni Ombra conta come minion separato con proprie regole e ferite.",
+      "flavor": "- Quanti ne puoi evocare? - Quanti ne vuoi?",
+      "minion": "Ogni Ombra è un minion indipendente"
+    },
+    {
+      "npc_id": "stella",
+      "title": "Arti marziali Occhirossi",
+      "cost": 1,
+      "stat": "combat",
+      "grade": "A",
+      "desc": "Attacca infliggendo 30 danni sacri. Contro non-morti o aberrazioni: 45 danni. Contro gli scorpioni 100.",
+      "rule": "Nessun tiro per colpire.",
+      "flavor": "L'astrosauro le ha parlato in sogno. Stella sa di essere la sua prescelta.",
+      "minion": "★ In forma astrosauro non può ricevere ferite da attacchi magici."
+    },
+    {
+      "npc_id": "stella",
+      "title": "Tocco delle stelle",
+      "cost": 2,
+      "stat": "cura",
+      "grade": "A",
+      "desc": "Cura 32 PF a un alleato. Può salvare un alleato che dovrebbe morire in questo round, riportandolo a 16 PF automaticamente.",
+      "rule": "Contatto fisico richiesto. Può salvare anche un minion dalla morte prevenendo il danno che lo ucciderebbe.",
+      "flavor": "I tessuti guariscono con la stessa forza vitale di un sole che brucia.",
+      "minion": "★ In forma astrosauro non può ricevere ferite da attacchi magici."
+    },
+    {
+      "npc_id": "stella",
+      "title": "Passo delle stelle",
+      "cost": 2,
+      "stat": "magia",
+      "grade": "S",
+      "desc": "Stance che genera aura divina per 2 round. Tutti gli alleati in 9m: +3 attacchi, +3 danni, riduzione danno 5/-.",
+      "rule": "Bonus di morale.",
+      "flavor": "- Da dove viene questa luce? - Dal cosmo che brucia dentro di me!",
+      "minion": "★ In forma astrosauro non può ricevere ferite da attacchi magici."
+    },
+    {
+      "npc_id": "stella",
+      "title": "Astrosauro",
+      "cost": 2,
+      "stat": "magia",
+      "grade": "S",
+      "desc": "linea di laser da 12 metri e 38 danni da fuoco, la velocità aumenta a 15m, può spostarsi senza causare attacchi d'opportunità. Dura 3 round.",
+      "rule": "Utilizzabile 1 volta per sessione.",
+      "flavor": "Il grande Astrosauro non cammina su questa terra. Tranne quando decide di farlo.",
+      "minion": "★ In forma astrosauro non può ricevere ferite da attacchi magici."
+    },
+    {
+      "npc_id": "gurgo",
+      "title": "Borseggio / scassinare",
+      "cost": 1,
+      "stat": "furtivita",
+      "grade": "B",
+      "desc": "Ruba un oggetto specifico da un PNG o apre una serratura. CD Furtività 14. Se il bersaglio non è allertato: riuscita automatica.",
+      "rule": "Anche in combattimento.",
+      "flavor": "Lo chiamavano \"Schifo\" perché erano crudeli, ora si chiama Scorpion e gliela farà vedere!",
+      "minion": ""
+    },
+    {
+      "npc_id": "gurgo",
+      "title": "Patetico",
+      "cost": 1,
+      "stat": "furtivita",
+      "grade": "B",
+      "desc": "Gurgo fa una scena tanto pietosa che un nemico perde la sua azione nel round successivo.",
+      "rule": "Non funziona su non-morti, costrutti o creature con Int < 6.",
+      "flavor": "Non è una tecnica, ma una vita intera di umiliazioni trasformata in arma.",
+      "minion": ""
+    },
+    {
+      "npc_id": "gurgo",
+      "title": "Sabotaggio gremlin",
+      "cost": 2,
+      "stat": "tech",
+      "grade": "B",
+      "desc": "Sabota un meccanismo nemico: cannone, trappola, serratura magica, gabbia. Effetto immediato e irreversibile senza riparazioni.",
+      "rule": "Deve essere adiacente al meccanismo.",
+      "flavor": "Si chiama anche \"Gurgo\" per non farsi trovare da Stella. Ma questo è un altro discorso.",
+      "minion": ""
+    },
+    {
+      "npc_id": "gatto",
+      "title": "Riparazione prodigiosa",
+      "cost": 1,
+      "stat": "tech",
+      "grade": "SS",
+      "desc": "Ripara istantaneamente qualsiasi oggetto meccanico o magico danneggiato. Nave: recupera 40 PF strutturali.",
+      "rule": "Il DM tira 1d6 in segreto. Con 1-2: Gatto ripara qualcosa che nessuno aveva chiesto, o migliora l'oggetto in modo inaspettato con conseguenze narrative imprevedibili. Non usabile in combattimento navale attivo.",
+      "flavor": "L'ordine in cui le cose si trovano è spesso sterile. Per questo le spingo giù dal tavolo.",
+      "minion": ""
+    },
+    {
+      "npc_id": "gatto",
+      "title": "Cucina suprema",
+      "cost": 1,
+      "stat": "cura",
+      "grade": "SS",
+      "desc": "Fuori dal combattimento. Tutti i commensali recuperano 40 PF e beneficiano dell'effetto di ristorare minore.",
+      "rule": "Il DM tira 1d6 in segreto. Con 1-2: il piatto ha un effetto aggiuntivo non richiesto - un commensale casuale acquisisce una capacità bizzarra o tutti subiscono un effetto narrativo imprevedibile per 1 ora.",
+      "flavor": "Ha buttato nella pentola tre chiodi arrugginiti, una vecchia pantofola e una crosta di pane. Ne ha tirato fuori un banchetto per 12 persone.",
+      "minion": ""
+    },
+    {
+      "npc_id": "gatto",
+      "title": "Costruzione titanica",
+      "cost": 2,
+      "stat": "tech",
+      "grade": "SS",
+      "desc": "Il giocatore descrive un problema. Gatto costruisce in pochi minuti qualcosa che lo risolve. La forma della soluzione è a discrezione del DM, e si rompe comunque in breve tempo.",
+      "rule": "Il DM tira 1d6 in segreto. Con 1-2: la costruzione risolve il problema ma ne crea uno nuovo di proporzioni simili altrove. Il giocatore descrive il problema - non la soluzione.",
+      "flavor": "Quello che voglio fare è qualcosa che quel rottame non sa ancora di poter essere.",
+      "minion": ""
+    },
+    {
+      "npc_id": "gatto",
+      "title": "Balzo della nave",
+      "cost": 3,
+      "stat": "tech",
+      "grade": "SS",
+      "desc": "La nave compie un balzo prodigioso fino a 1km, superando qualsiasi ostacolo fisico o navale.",
+      "rule": "Il DM tira 1d6 in segreto. Con 1-2: la nave atterra sulla terra ferma. Richiede almeno un giorno di riparazioni e un modo per rimetterla in mare prima di poter ripartire. Gatto deve essere sveglio e a bordo. 1 volta per sessione.",
+      "flavor": "Nessuno sa cosa ci sia dentro quei pedali. Nessuno ha il coraggio di cercare di scoprirlo.",
+      "minion": ""
+    },
+    {
+      "npc_id": "dorag",
+      "title": "Soffio del drago",
+      "cost": 1,
+      "stat": "combat",
+      "grade": "A",
+      "desc": "A scelta: soffio di fuoco (36 danni, cono 9m, CD Riflessi 25 dimezza) oppure soffio soporifero (1 bersaglio dorme 10 min, Tempra 25 nega).",
+      "rule": "Una sola forma per attivazione.",
+      "flavor": "È educato. È cordiale. Brucia le cose solo quando necessario.",
+      "minion": ""
+    },
+    {
+      "npc_id": "dorag",
+      "title": "Contatto dell'Airone",
+      "cost": 2,
+      "stat": "magia",
+      "grade": "B",
+      "desc": "Chiama un contatto nella rete dell'Airone. Ottieni almeno 3 informazioni riservate e concrete su una fazione, PNG o luogo.",
+      "rule": "Max 1 per sessione. Informazioni a discrezione del DM.",
+      "flavor": "I draghi di ottone collezionano storie. Dorag ne conosce abbastanza da riempire una biblioteca.",
+      "minion": ""
+    },
+    {
+      "npc_id": "dorag",
+      "title": "Maestà del drago",
+      "cost": 2,
+      "stat": "combat",
+      "grade": "A",
+      "desc": "Tutti i nemici entro 12m con meno di 10 DV sono spaventati per 2 round. Tutti gli altri sono comunque scossi.",
+      "rule": "si può cumulare con più attivazioni",
+      "flavor": "La sua stazza può diventare presto molto minacciosa.",
+      "minion": ""
+    },
+    {
+      "npc_id": "murray",
+      "title": "Maledizione dello stregone",
+      "cost": 1,
+      "stat": "magia",
+      "grade": "C",
+      "desc": "Un nemico subisce -2 a tutti i tiri salvezza per 1 ora. Murray scaglia la maledizione nel modo più teatralmente minaccioso possibile.",
+      "rule": "Non si cumula con Maledizione Voodoo di Lady.",
+      "flavor": "Sono il più terrificante non-morto dell'area delle tre isole! ok, il più terrificante PEZZO di non morto.",
+      "minion": ""
+    },
+    {
+      "npc_id": "murray",
+      "title": "Dardo incantato veramente spaventoso",
+      "cost": 1,
+      "stat": "magia",
+      "grade": "C",
+      "desc": "3 dardi magici automatici da 8 danni l'uno. Distribuibili su bersagli diversi.",
+      "rule": "Non richiede tiro per colpire.",
+      "flavor": "- Come fai a lanciare incantesimi senza mani? - Silenzio! Non distrarre la malignità con le tue stupide domande!",
+      "minion": ""
+    },
+    {
+      "npc_id": "murray",
+      "title": "Trattativa con i morti",
+      "cost": 2,
+      "stat": "magia",
+      "grade": "C",
+      "desc": "Murray convince un non-morto non intelligente a ignorare la ciurma per 10 minuti grazie alla sua parlantina.",
+      "rule": "Non funziona su non-morti intelligenti.",
+      "flavor": "Varcheremo le porte dell'inferno reggendo le loro teste su una picca! beh ok tu varcherai e io rotolerò.",
+      "minion": ""
+    }
   ]
 }
