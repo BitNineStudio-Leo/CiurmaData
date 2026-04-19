@@ -266,7 +266,7 @@
     },
     {
       "id": "ombre",
-      "name": "Ombre del Crocicchio",
+      "name": "Ombre del crocicchio",
       "star": false,
       "classe": "Evocazione · Quarantena",
       "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/ombre.jpg",
@@ -285,6 +285,73 @@
       "tech": "D",
       "cura": "D",
       "furtivita": "B",
+      "summoned": true
+    },
+    {
+      "id": "chuck",
+      "name": "Chuckonius",
+      "star": true,
+      "classe": "Lv 17, Lich, Geomante",
+      "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/chuck.jpg",
+      "ca": 28,
+      "pf_max": 4,
+      "ts_forte": [
+        "Tempra",
+        "Volontà"
+      ],
+      "ts_debole": [
+        "Riflessi"
+      ],
+      "combat": "B",
+      "magia": "SS",
+      "nav": "B",
+      "tech": "A",
+      "cura": "C",
+      "furtivita": "D"
+    },
+    {
+      "id": "simon",
+      "name": "Simon Sgabelloviz",
+      "star": false,
+      "classe": "Lv 15, Sgabello/Umano, Chierico della Fortuna",
+      "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/simon.jpg",
+      "ca": 25,
+      "pf_max": 3,
+      "ts_forte": [
+        "Tempra",
+        "Riflessi"
+      ],
+      "ts_debole": [
+        "Volontà"
+      ],
+      "combat": "C",
+      "magia": "A",
+      "nav": "B",
+      "tech": "D",
+      "cura": "A",
+      "furtivita": "A"
+    },
+    {
+      "id": "arredamento",
+      "name": "Arredamento",
+      "star": false,
+      "classe": "Oggetto Animato · Simon",
+      "image_url": "https://iltesorodelcuorenero.wordpress.com/wp-content/uploads/2026/04/arredamento.jpg",
+      "ca": 20,
+      "pf_max": 2,
+      "ts_forte": [
+        "Tempra"
+      ],
+      "ts_debole": [
+        "Riflessi",
+        "Volontà"
+      ],
+      "combat": "A",
+      "magia": "D",
+      "nav": "D",
+      "tech": "D",
+      "cura": "D",
+      "furtivita": "D",
       "summoned": true
     }
   ],
@@ -776,6 +843,112 @@
       "desc": "1ps: fiancheggia un nemico — vantaggio al primo attacco verso quel nemico. 2ps: due Ombre si sacrificano, assorbono la prossima ferita di un minion. 3ps: esplorano una zona, il DM fornisce un'informazione tattica. 4ps: bloccano un nemico per 1 round, non può agire.",
       "rule": "Spendi 1-4 PS. L'effetto corrisponde ai punti spesi. Le Ombre devono essere entro 1,5m dal bersaglio.",
       "flavor": "Lo ombre emergono dal crocicchio al richiamo dello shadow man.",
+      "minion": ""
+    },
+    {
+      "npc_id": "chuck",
+      "title": "Gamba di Legno",
+      "cost": 1,
+      "stat": "magia",
+      "grade": "SS",
+      "desc": "Chuck sfrutta il potere del suo filatterio. Per questo round è immune ai danni.",
+      "rule": "Utilizzabile 1 volta per combattimento.",
+      "flavor": "Si è spostata? curioso.",
+      "minion": ""
+    },
+    {
+      "npc_id": "chuck",
+      "title": "Maledizione Voodoo",
+      "cost": 2,
+      "stat": "magia",
+      "grade": "SS",
+      "desc": "Chuck lancia una maledizione su un nemico. Il bersaglio subisce svantaggio a tutti i tiri per 1 round e non può beneficiare di cure durante questo periodo.",
+      "rule": "Bersaglio singolo. Gli effetti durano fino all'inizio del prossimo turno di Chuck.",
+      "flavor": "- Cosa hai fatto? - Niente di permanente. Probabilmente.",
+      "minion": ""
+    },
+    {
+      "npc_id": "chuck",
+      "title": "Palla di Fuoco",
+      "cost": 1,
+      "stat": "magia",
+      "grade": "SS",
+      "desc": "Chuck lancia una classica palla di fuoco. Tutti i nemici entro 6m dal punto di impatto subiscono 35 danni da fuoco. CD Riflessi 24 dimezza.",
+      "rule": "Raggio 6m dal punto di impatto. Colpisce tutti bersagli nell'area indiscriminatamente.",
+      "flavor": "C'era un alto tasso di nemici nel raggio dell'esplosione, qualche alleato impreparato non rende la scelta meno strategica, capitano.",
+      "minion": ""
+    },
+    {
+      "npc_id": "simon",
+      "title": "LYCKA",
+      "cost": 1,
+      "stat": "magia",
+      "grade": "A",
+      "desc": "La fortuna sfacciata di Simon sorride a un alleato. Un alleato a scelta può ritirare immediatamente un dado appena tirati e tenere il risultato migliore.",
+      "rule": "Va dichiarato subito dopo il tiro originale, prima che il DM descriva l'esito.",
+      "flavor": "Un altro giorno fortunato in una vita da sgabello fortunato.",
+      "minion": ""
+    },
+    {
+      "npc_id": "simon",
+      "title": "BRETTERBANK",
+      "cost": 3,
+      "stat": "combat",
+      "grade": "B",
+      "desc": "Simon emette quattro gambe di legno aggiuntive e diventa una cavalcatura. Per 3 round il passeggero ottiene +3m al movimento e +3 CA di copertura. Il passeggero può interrompere il bonus in qualsiasi momento per proiettarsi dallo sgabello, ottenendo vantaggio al primo attacco di quel round.",
+      "rule": "Un solo passeggero. La proiezione termina l'effetto di BRETTERBANK. Simon non può usare altre carte mentre funge da cavalcatura.",
+      "flavor": "Simon non ha mai capito perché i suoi compagni trovino strano cavalcare uno sgabello.",
+      "minion": ""
+    },
+    {
+      "npc_id": "simon",
+      "title": "Infiltrazione",
+      "cost": 1,
+      "stat": "furtivita",
+      "grade": "SS",
+      "desc": "Simon si trasforma in un innocuo sgabello e si infiltra in una zona sorvegliata o in una stanza nemica. Raccoglie informazioni: il DM rivela un segreto tattico, una posizione, o un piano nemico.",
+      "rule": "Fuori combattimento. Simon deve poter raggiungere la zona bersaglio. La durata è a discrezione del DM in base alla situazione.",
+      "flavor": "Nessuno sospetta dello sgabello. Lo sgabello sente tutto.",
+      "minion": ""
+    },
+    {
+      "npc_id": "simon",
+      "title": "WANDSCHRANK",
+      "cost": 2,
+      "stat": "magia",
+      "grade": "B",
+      "desc": "Simon anima un oggetto di legno nelle vicinanze.",
+      "rule": "Richiede un oggetto di legno sufficientemente grande nelle vicinanze (porta, cassa, armadio, remo). Se non ve ne sono, la carta non può essere usata.",
+      "flavor": "- Da dove viene quell'armadio? - È sempre stato lì. - Siamo su una nave. - Chiaro.",
+      "minion": "",
+      "summon": {
+        "npc_id": "billy",
+        "pool": 2,
+        "pool_name": "PS"
+      }
+    },
+    {
+      "npc_id": "arredamento",
+      "title": "KNUFF",
+      "cost": 1,
+      "summon_cost": true,
+      "stat": "combat",
+      "grade": "A",
+      "desc": "1ps: L'arredamento si scaglia su un nemico - 20 danni e il bersaglio viene abbattuto. 2ps: stesso effetto ma colpisce tutti i nemici in un quadrato di 3m.",
+      "rule": "Deve essere entro 3m dal bersaglio. L'abbattimento dura 1 round.",
+      "flavor": "Non è un mobile aggressivo. È solo molto, molto motivato.",
+      "minion": ""
+    },
+    {
+      "npc_id": "arredamento",
+      "title": "STÄNGA",
+      "cost": 1,
+      "summon_cost": true,
+      "stat": "combat",
+      "grade": "A",
+      "desc": "1ps: L'arredamento blocca un nemico di taglia media o inferiore per 1 round. 2ps: stesso effetto ma il blocco dura 2 round.",
+      "rule": "Deve essere adiacente al bersaglio. Il nemico non può muoversi ma può ancora attaccare.",
+      "flavor": "Il tavolo lo fissa. Il tavolo non si muove. Il tavolo ha tutto il tempo del mondo.",
       "minion": ""
     }
   ]
